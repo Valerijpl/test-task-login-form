@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;      
+}
+
+.action-button {
+    background-color: rgb(63, 81, 181);
+    border-radius: 2px;
+    border: none;
+    color: #FFF;
+    width: 210px;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.action-button:disabled, .action-button:hover {
+    opacity: 0.8;
+}
+
+.action-button:disabled {
+    cursor: not-allowed;
+}
