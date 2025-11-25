@@ -3,11 +3,10 @@ import { LoginFormComponent } from '../core/components/login-form/login-form.com
 import { PageTypeEnum } from '../core/enums/page-type-enum';
 
 @Component({
-  selector: 'app-sign-in',
-  standalone: true,
-  imports: [LoginFormComponent],
-  templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.scss'
+    selector: 'app-sign-in',
+    imports: [LoginFormComponent],
+    templateUrl: './sign-in.component.html',
+    styleUrl: './sign-in.component.scss'
 })
 export class SignInComponent {
   loginFormPageType: PageTypeEnum = PageTypeEnum.SignIn;
