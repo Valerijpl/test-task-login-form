@@ -18,7 +18,7 @@ export class UserService {
   }
 
   public signUp(user: User): Observable<null> {
-    return this.http.post('http://localhost:3000/sign-up', user)
+    return this.http.post('http:localhost:3000/signup', user)
     .pipe(switchMap(() => {
       return of(null);
     }))
