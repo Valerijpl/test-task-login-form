@@ -17,16 +17,17 @@ import { Subscription, Subject, takeUntil } from 'rxjs';
 
 
 @Component({
-    selector: 'app-login-form',
-    imports: [
-        MatCardModule,
-        MatFormFieldModule,
-        MatInputModule,
-        ReactiveFormsModule,
-        RouterLink
-    ],
-    templateUrl: './login-form.component.html',
-    styleUrl: './login-form.component.scss'
+  selector: 'app-login-form',
+  standalone: true,
+  imports: [
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    RouterLink
+  ],
+  templateUrl: './login-form.component.html',
+  styleUrl: './login-form.component.scss'
 })
 export class LoginFormComponent implements OnInit, OnDestroy {
   @Input() pageType!: PageTypeEnum;
